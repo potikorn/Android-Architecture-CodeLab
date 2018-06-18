@@ -117,7 +117,7 @@ public class SunshineRepository {
      */
     private boolean isFetchNeeded() {
         Date today = SunshineDateUtils.getNormalizedUtcDateForToday();
-        return mWeatherDao.countAllFutureWeather(today) > WeatherNetworkDataSource.NUM_DAYS;
+        return mWeatherDao.countAllFutureWeather(today) < WeatherNetworkDataSource.NUM_DAYS;
     }
 
     /**

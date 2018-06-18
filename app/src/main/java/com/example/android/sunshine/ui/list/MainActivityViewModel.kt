@@ -5,7 +5,7 @@ import android.arch.lifecycle.ViewModel
 import com.example.android.sunshine.data.SunshineRepository
 import com.example.android.sunshine.data.database.ListWeatherEntry
 
-class MainActivityViewModel(private val repository: SunshineRepository) : ViewModel() {
+class MainActivityViewModel(repository: SunshineRepository) : ViewModel() {
 
     private var mWeatherList: LiveData<MutableList<ListWeatherEntry>>? = null
 
